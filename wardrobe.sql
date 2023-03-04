@@ -97,3 +97,22 @@ VALUES('cardigan', 'grey', NULL, 'Oliver_spencer', 'thick', 2015),
    ('sweater', 'charcoal', NULL, 'Polo_ralph_lauren', NULL, 2022),
    ('sweater', 'light_brown', NULL, 'Oscar_jacobson', NULL, 2018),
    ('sweater', 'navy_blue', NULL, 'Oscar_jacobson', NULL, 2021);
+
+   CREATE TABLE coats
+ (
+   cloth_id INT AUTO_INCREMENT PRIMARY KEY,
+   item VARCHAR(30) NOT NULL,
+   color VARCHAR(30) NOT NULL,
+   pattern VARCHAR(30),
+   brand VARCHAR(30),
+   other VARCHAR(30),
+   year INT
+ );
+
+INSERT INTO coats(item, color, brand, other, year)
+VALUES('blazer', 'navy_blue', 'Turo_tailor', NULL, 2014),
+   ('wool_jacket', 'navy_blue', 'APC', 'shearling_collar', 2019),
+   ('peacoat', 'navy_blue', 'AMI', NULL, 2016),
+   ('harrington', 'navy_blue', 'Fred_perry', NULL, 2016),
+   ('parka', 'olive_green', 'Jack_wolfskin', 'fur_hood', 2015),
+   ('denim_jacket', 'blue', 'Levi\'s', NULL, 2019);
