@@ -78,3 +78,22 @@ VALUES('button_down', 'blue', 'uni_stripe', 'Boggi', NULL, 2017),
    ('henley', 'grey', 'black_stripe', 'Jack_and_jones', NULL, 2013),
    ('henley', 'cream', NULL, 'Rag_and_bone', NULL, 2017),
    ('henley', 'white', NULL, 'Neighborhood', NULL, 2016);
+
+   CREATE TABLE knitwear
+ (
+   cloth_id INT AUTO_INCREMENT PRIMARY KEY,
+   item VARCHAR(30) NOT NULL,
+   color VARCHAR(30) NOT NULL,
+   pattern VARCHAR(30),
+   brand VARCHAR(30),
+   other VARCHAR(30),
+   year INT
+ );
+
+INSERT INTO knitwear(item, color, pattern, brand, other, year)
+VALUES('cardigan', 'grey', NULL, 'Oliver_spencer', 'thick', 2015),
+   ('sweater', 'cream', 'fisherman_knit', 'Tomorrowland', 'thick', 2015),
+   ('turtleneck', 'black', NULL, 'Makia', NULL, 2020),
+   ('sweater', 'charcoal', NULL, 'Polo_ralph_lauren', NULL, 2022),
+   ('sweater', 'light_brown', NULL, 'Oscar_jacobson', NULL, 2018),
+   ('sweater', 'navy_blue', NULL, 'Oscar_jacobson', NULL, 2021);
