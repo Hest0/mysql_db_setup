@@ -143,3 +143,24 @@ VALUES('jacket', 'black', NULL, 'Halti', NULL, 2013),
    ('shorts', 'blue', NULL, 'Umbro', NULL, 2016),
    ('trainers', 'black', NULL, 'Nike', NULL, 2019),
    ('bouldering_shoes', 'black', NULL, 'Tenaya', 'orange_white_details', 2022);
+
+   CREATE TABLE shoes
+ (
+   cloth_id INT AUTO_INCREMENT PRIMARY KEY,
+   item VARCHAR(30) NOT NULL,
+   color VARCHAR(30) NOT NULL,
+   pattern VARCHAR(30),
+   brand VARCHAR(30),
+   other VARCHAR(30),
+   year INT
+ );
+
+INSERT INTO shoes(item, color, brand, other, year)
+VALUES('desert_boots', 'brown', 'Clark\'s', NULL, 2014),
+   ('chukka_boots', 'tan', 'Loake', NULL, 2015),
+   ('leather_boots', 'burgundy', 'Wolverine', NULL, 2016),
+   ('boat_shoes', 'brown', 'Sebago', NULL, 2015),
+   ('sneakers', 'navy_blue', 'New_balance', 'white_details', 2018),
+   ('sneakers', 'white', 'Vans', NULL, 2022),
+   ('oxfords', 'black', 'Church\'s', NULL, 2019),
+   ('double_monkstrap', 'brown', 'Meermin', NULL, 2022);
