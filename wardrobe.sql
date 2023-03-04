@@ -42,3 +42,39 @@ VALUES('chino_shorts', 'khaki', NULL, 'Super_dry', 2015),
    ('chino_shorts', 'dark_blue', NULL, 'Carhartt', 2014),
    ('swim_shorts', 'navy_blue', 'fish', 'Forever_21', 2018),
    ('swim_shorts', 'light_green', 'floral', 'Dressmann', 2022);
+
+   CREATE TABLE shirts
+ (
+   cloth_id INT AUTO_INCREMENT PRIMARY KEY,
+   item VARCHAR(30) NOT NULL,
+   color VARCHAR(30) NOT NULL,
+   pattern VARCHAR(30),
+   brand VARCHAR(30),
+   other VARCHAR(30),
+   year INT
+ );
+
+INSERT INTO shirts(item, color, pattern, brand, other, year)
+VALUES('button_down', 'blue', 'uni_stripe', 'Boggi', NULL, 2017),
+   ('button_down', 'white', 'thick_blue_stripe', 'These_glory_days', NULL, 2022),
+   ('button_down', 'light_blue', NULL, 'Schoffa', NULL, 2018),
+   ('button_down', 'chambray_blue', NULL, 'Schoffa', NULL, 2018),
+   ('button_up', 'white_linen', NULL, 'Uniqlo', NULL, 2018),
+   ('button_up', 'black', NULL, 'Schoffa', NULL, 2015),
+   ('button_up', 'light_blue', 'white_stripe', 'These_glory_days', 'short_sleeve', 2022),
+   ('camp_collar', 'cream', 'green_print', 'Tiger_of_sweden', 'short_sleeve', 2022),
+   ('camp_collar', 'blue', 'white_floral_print', 'Jacquemus', 'short_sleeve', 2022),
+   ('flannel', 'green', 'white_checked', 'Cottonfield', NULL, 2022),
+   ('button_up', 'white', NULL, 'Eton', 'formal', 2017),
+   ('t_shirt', 'white', NULL, 'Bershka', NULL, 2019),
+   ('t_shirt', 'white', NULL, 'Uniqlo', NULL, 2018),
+   ('t_shirt', 'white', NULL, 'Uniqlo', NULL, 2018),
+   ('t_shirt', 'navy_blue', NULL, 'Uniqlo', NULL, 2018),
+   ('t_shirt', 'army_green', NULL, 'Uniqlo', NULL, 2018),
+   ('t_shirt', 'black', NULL, 'Primark', NULL, 2018),
+   ('t_shirt', 'black', NULL, 'Primark', NULL, 2018),
+   ('t_shirt', 'mustard', NULL, 'Bershka', NULL, 2019),
+   ('t_shirt', 'brown', NULL, 'Bershka', NULL, 2019),
+   ('henley', 'grey', 'black_stripe', 'Jack_and_jones', NULL, 2013),
+   ('henley', 'cream', NULL, 'Rag_and_bone', NULL, 2017),
+   ('henley', 'white', NULL, 'Neighborhood', NULL, 2016);
