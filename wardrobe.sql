@@ -116,3 +116,30 @@ VALUES('blazer', 'navy_blue', 'Turo_tailor', NULL, 2014),
    ('harrington', 'navy_blue', 'Fred_perry', NULL, 2016),
    ('parka', 'olive_green', 'Jack_wolfskin', 'fur_hood', 2015),
    ('denim_jacket', 'blue', 'Levi\'s', NULL, 2019);
+
+   CREATE TABLE sportswear
+ (
+   cloth_id INT AUTO_INCREMENT PRIMARY KEY,
+   item VARCHAR(30) NOT NULL,
+   color VARCHAR(30) NOT NULL,
+   pattern VARCHAR(30),
+   brand VARCHAR(30),
+   other VARCHAR(30),
+   year INT
+ );
+
+INSERT INTO sportswear(item, color, pattern, brand, other, year)
+VALUES('jacket', 'black', NULL, 'Halti', NULL, 2013),
+   ('pants', 'black', NULL, 'Blacc', NULL, 2019),
+   ('pants', 'black', 'white_stripes', 'Adidas', NULL, 2015),
+   ('pants', 'black', 'white_stripes', 'Adidas', NULL, 2020),
+   ('pants', 'black', NULL, 'Adidas', NULL, 2019),
+   ('tech_shirt', 'grey', NULL, 'Under_armour', 'logo_chest', 2017),
+   ('t-shirt', 'grey', NULL, 'Primark', NULL, 2018),
+   ('t-shirt', 'grey', NULL, 'Primark', NULL, 2018),
+   ('t-shirt', 'charcoal', NULL, 'HM', NULL, 2021),
+   ('t-shirt', 'brown', NULL, 'HM', NULL, 2021),
+   ('t-shirt', 'charcoal', NULL, 'HM', NULL, 2016),
+   ('shorts', 'blue', NULL, 'Umbro', NULL, 2016),
+   ('trainers', 'black', NULL, 'Nike', NULL, 2019),
+   ('bouldering_shoes', 'black', NULL, 'Tenaya', 'orange_white_details', 2022);
